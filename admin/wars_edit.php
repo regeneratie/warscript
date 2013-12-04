@@ -57,7 +57,7 @@ header('location:error.php');
 
 
  // connect to the database
- include('./admin/dbconn.php');
+ include('./dbconn.php');
  
  // check if the form has been submitted. If it has, process the form and save it to the database
  if (isset($_POST['submit']))
@@ -92,7 +92,7 @@ header('location:error.php');
  or die(mysql_error()); 
  
  // once saved, redirect back to the view page
- header("Location: wars.php"); 
+ header("Location: ../wars.php"); 
  }
  }
  else

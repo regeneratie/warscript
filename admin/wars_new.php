@@ -91,7 +91,7 @@ include('dbconn.php');
  or die(mysql_error()); 
  
  // once saved, redirect back to the view page
- header("Location: wars.php"); 
+ header("Location: ../wars.php"); 
  }
  }
  else
