@@ -1,5 +1,5 @@
 <?php
-include('dbconn.php');//para sa connection sang database
+include('./dbconn.php');//para sa connection sang database
 
 if (isset($_POST['submit'])) {//condition kun e click ang button
 $UserName=$_POST['UserName'];//variable ang $Username kag ang $_POST['UserName'] ay value sang textbox nga UserName
