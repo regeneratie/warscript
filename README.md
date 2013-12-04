@@ -14,6 +14,7 @@ Change log
 TODO list
 ==========
 News script
++ making database structure [done]
 - Add news
 - Edit news
 - Author
