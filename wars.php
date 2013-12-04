@@ -129,9 +129,6 @@ echo $roundslost;
 echo "</td><td>";
 echo "<br>";
 echo $roundsplayed;
-echo "</td><td>"
-echo "<Form Name ='form1' Method ='POST' ACTION = 'logout.php'>";
-echo "<input type='submit' name='submit' value='Login' action='./logout.php'/>";
 echo "</td></tr>";
 mysql_close;
 ?>
