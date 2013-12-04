@@ -12,14 +12,13 @@ $result = mysql_query("SELECT * FROM news ORDER BY id DESC") or die(mysql_error(
 while($row = mysql_fetch_array($result))
   {
 echo "<div class='datagrid'><table width='800' align='center'>";
-echo "<thead><tr><th>News</th></tr></thead>";
+echo "<thead><tr><th>head</th></tr></thead>" $row['head'] ;
+echo "<td>";
 echo $row['id'];
 echo "</td><td>";
-echo ucfirst($row['date']);
+echo $row['date'];
 echo "</td><td>";
-echo $row['head'];
-echo "</td><td>";
-echo ucfirst($row['text']);
+echo $row['text'];
 echo "</td>";
   }
 
