@@ -12,7 +12,7 @@ $result = mysql_query("SELECT * FROM news ORDER BY id DESC") or die(mysql_error(
 while($row = mysql_fetch_array($result))
   {
 echo "<div class='datagrid'><table width='800' align='center'>";
-echo "<thead><tr><th>head</th></tr></thead>" . $row['head'];
+echo "<thead><tr><th>head</th>". $row['head'] . "</tr></thead>" ;
 echo "<td>";
 echo $row['date'];
 echo "</tr></td>";
