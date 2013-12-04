@@ -111,7 +111,7 @@ $uitkomst_lost = 100 / $count_win * $cw_lost;
  
 echo "<div class='datagrid'><table width='800' align='center'>";
 echo "<thead><tr><th>Won</th><th>Draw</th><th>Lost</th></tr></thead>";
-echo("<tr class='alt'><td>");
+echo("<tr><td>");
 echo $cw_won . ' X won,  is %' . number_format($uitkomst_win, 2, ',', ' ');
 echo "</td><td>";
 echo "<br>";
@@ -121,7 +121,7 @@ echo "<br>";
 echo $cw_lost . ' X lost, is %' . number_format($uitkomst_lost, 2, ',', ' ');
 echo "</td></tr>";
 echo "<thead><tr><th>Rounds WON</th><th>Rounds LOST</th><th>Total Rounds Played</th></tr></thead>";
-echo("<tr class='alt'><td>");
+echo("<tr><td>");
 echo $roundswon;
 echo "</td><td>";
 echo "<br>";
