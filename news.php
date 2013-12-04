@@ -13,9 +13,9 @@ while($row = mysql_fetch_array($result))
   {
 echo "<div class='datagrid'><table width='800' align='center'>";
 echo "<thead><tr><th>head</th></tr></thead>";
-echo "<tr>";
+echo "<tr><td>";
 echo $row['head'];
-echo "</tr><td>";
+echo "</tr></td>";
 echo $row['date'];
 echo "</td><td>";
 echo $row['text'];
