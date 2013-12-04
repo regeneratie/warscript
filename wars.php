@@ -64,8 +64,8 @@ else
 	echo "<span style='color: blue'><b>Draw</b>";
 	$cw_draw++;
 }
-echo '<td><a href="wars_edit.php?id=' . $row['id'] . '"><img src="../pics/edit.png" /></a></td>';
-echo '<td><a href="wars_delete.php?id=' . $row['id'] . '"><img src="../pics/delete.png" /></a></td>';
+echo '<td><a href="wars_edit.php?id=' . $row['id'] . '"><img src="./pics/edit.png" /></a></td>';
+echo '<td><a href="wars_delete.php?id=' . $row['id'] . '"><img src="./pics/delete.png" /></a></td>';
 echo "</td>";
   }
 
