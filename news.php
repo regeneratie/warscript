@@ -6,7 +6,7 @@ header('location:error.php');
 //
 include('./admin/dbconn.php');
 
-$result = mysql_query("SELECT * FROM news WHERE `delete` = 'no' ORDER BY id DESC") or die(mysql_error());
+$result = mysql_query("SELECT * FROM news ORDER BY id DESC") or die(mysql_error());
 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
