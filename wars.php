@@ -1,5 +1,5 @@
 <?php
-include('../admin/dbconn.php');
+include('./admin/dbconn.php');
 
 $result = mysql_query("SELECT * FROM wars WHERE `delete` = 'no' ORDER BY id DESC") or die(mysql_error());
 //Begin of the table
