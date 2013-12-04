@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['member_id'])){
+header('location:error.php');
+}
 /* 
  DELETE.PHP
  Deletes a specific entry from the 'players' table
