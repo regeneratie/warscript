@@ -14,7 +14,7 @@ $row=mysql_fetch_array($result);//ma return row sa database
 		$_SESSION['member_id']=$row['member_id'];//kwaon ang id sang may tyakto nga username kag password ang ibotang sa $_SESSION['member_id']
 		header('location:home.php');
 		}else{
-		header('location:./index.php');
+		header('location:../index.php');
 		}
 }
 ?>

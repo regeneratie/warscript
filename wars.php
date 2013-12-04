@@ -130,5 +130,6 @@ echo "</td><td>";
 echo "<br>";
 echo $roundsplayed;
 echo "</td></tr>";
+
 mysql_close;
 ?>
