@@ -13,7 +13,7 @@ while($row = mysql_fetch_array($result))
   {
 echo "<div class='datagrid'><table width='800' align='center'>";
 echo "<thead><tr><th>head</th></tr></thead>" . $row['head'];
-echo "<tr><td>";
+echo "<td>";
 echo $row['date'];
 echo "</tr></td>";
 echo "<tr><td>";
