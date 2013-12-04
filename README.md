@@ -8,6 +8,7 @@ Change log
 ==========
 
 04-12-2013
+- add news system
 - make login and add admin map
 - fixx isusses with folders
 - removed typos
