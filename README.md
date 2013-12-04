@@ -46,3 +46,6 @@ Server list
 Admin control panel
 - Rank based? Who can add news, cws, links etc
 
+forum
+- make a forum.
+
