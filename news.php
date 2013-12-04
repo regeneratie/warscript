@@ -16,10 +16,12 @@ echo "<thead><tr><th>head</th></tr></thead>";
 echo "<tr><td>";
 echo $row['head'];
 echo "</tr></td>";
+echo "<tr><td>";
 echo $row['date'];
-echo "</td><td>";
+echo "</tr></td>";
+echo "<tr><td>";
 echo $row['text'];
-echo "</td>";
+echo "</tr></td>";
   }
 
 
