@@ -18,7 +18,7 @@
  or die(mysql_error()); 
  
  // redirect back to the view page
- header("Location: home.php");
+ header("Location: index.php");
  }
  else
  // if id isn't set, or isn't valid, redirect back to view page
