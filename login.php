@@ -1,5 +1,5 @@
 <?php
-include('./admin/dbconn.php');//para sa connection sang database
+include('dbconn.php');//para sa connection sang database
 
 if (isset($_POST['submit'])) {//condition kun e click ang button
 $UserName=$_POST['UserName'];//variable ang $Username kag ang $_POST['UserName'] ay value sang textbox nga UserName
@@ -12,7 +12,7 @@ $row=mysql_fetch_array($result);//ma return row sa database
 		if ($count > 0){//kun may tyakto sa query e execute yah ang code sa dalom
 		session_start();//para mag start ang session
 		$_SESSION['member_id']=$row['member_id'];//kwaon ang id sang may tyakto nga username kag password ang ibotang sa $_SESSION['member_id']
-		header('location:wars.php');
+		header('location:home.php');
 		}else{
 		header('location:./index.php');
 		}
