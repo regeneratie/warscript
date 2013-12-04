@@ -7,6 +7,12 @@ Action quake 2 clan war script
 Change log
 ==========
 
+04-12-2013
+- make login and add admin map
+- fixx isusses with folders
+- removed typos
+- fixx some securty isusses
+
 03-12-2013
 - uploaded files we need.
 
