@@ -127,5 +127,7 @@ echo "</td><td>";
 echo $roundsplayed;
 echo "</td></tr>";
 
+include "./admin/wars_new.php";
+
 mysql_close;
 ?>
