@@ -7,6 +7,9 @@ Action quake 2 clan war script
 Change log
 ==========
 
+10-12-2013
+- add posted by news function. also added it to the dbb sql.
+
 04-12-2013
 - add news system
 - make login and add admin map
