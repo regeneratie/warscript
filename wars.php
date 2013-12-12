@@ -9,7 +9,7 @@ include('./admin/dbconn.php');
 $result = mysql_query("SELECT * FROM wars WHERE `delete` = 'no' ORDER BY id DESC") or die(mysql_error());
 //Begin of the table
 echo "<div class='datagrid'><table width='800' align='center'>";
-echo "<thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Delete</th></tr></thead>";
+echo "<thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Delete</th><th>Add</th></tr></thead>";
 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
@@ -71,6 +71,9 @@ else
 }
 echo '<td><a href="./admin/wars_edit.php?id=' . $row['id'] . '"><img src="./pics/edit.png" /></a></td>';
 echo '<td><a href="./admin/wars_delete.php?id=' . $row['id'] . '"><img src="./pics/delete.png" /></a></td>';
+echo '<td><a href="./admin/wars_new.php"><img src="./pics/add.png" /></a></td>';
+
+
 echo "</td>";
   }
 
