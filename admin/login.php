@@ -12,9 +12,9 @@ $row=mysql_fetch_array($result);//ma return row sa database
 		if ($count > 0){//kun may tyakto sa query e execute yah ang code sa dalom
 		session_start();//para mag start ang session
 		$_SESSION['member_id']=$row['member_id'];//kwaon ang id sang may tyakto nga username kag password ang ibotang sa $_SESSION['member_id']
-		header('location:./wars.php');
-		}else{
 		header('location:./index.php');
+		}else{
+		header('location:../index.php');
 		}
 }
 ?>
