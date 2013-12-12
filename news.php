@@ -15,6 +15,11 @@ echo "<tr>";
 echo "<td>" . $row[date] . "</b></td>";
 echo "<tr>";
 echo "<td>Posted by <b>" . $row[poster] . '</b>  ' . $row[date] ."</td>";
+echo "<tr>";
+echo '<td><a href="./admin/news_edit.php?id=' . $row['id'] . '"><img src="./pics/edit.png" />
+		  <a href="./admin/news_delete.php?id=' . $row['id'] . '"><img src="./pics/delete.png" />
+		  <a href="./admin/news_add.php"><img src="./pics/add.png" />
+		  </a></td>';
 echo "</table>";
   }
 
