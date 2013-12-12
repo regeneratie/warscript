@@ -130,8 +130,6 @@ echo "</td><td>";
 echo $roundsplayed;
 echo "</td></tr>";
 
-include "./news.php";
-include "./admin/wars_new.php";
 
 mysql_close;
 ?>
