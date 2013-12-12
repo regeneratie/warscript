@@ -7,6 +7,10 @@ Action quake 2 clan war script
 Change log
 ==========
 
+12-12-2013
+- updated the news functions
+- fixxed some bugs
+
 10-12-2013
 - add posted by news function. also added it to the dbb sql.
 
@@ -25,13 +29,13 @@ TODO list
 ==========
 News script
 + making database structure [done]
-- Add news
-- Edit news
-- Author
-- News categories
+- Add news [done]
+- Edit news [done]
+- Author [done]
+- News categories [progres]
 
 Member section
-- Add member
+- Add member [progres]
 --- Rank, Nick, Name, Location, DoB
 - Edit member
 - Remove member
