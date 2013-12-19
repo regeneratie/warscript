@@ -7,6 +7,8 @@ Action quake 2 clan war script
 Change log
 ==========
 
+
+
 12-12-2013
 - updated the news functions
 - fixxed some bugs
