@@ -38,7 +38,7 @@ header('location:error.php');
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
  <td><strong>date</strong></td> <td><input type="text" name="date" value="<?php echo $date; ?>" /></td><tr>
  </tr><td><strong>titel</strong></td> <td><input type="text" name="titel" value="<?php echo $titel; ?>" /></td><tr>
- </tr><td><strong>text</strong></td> <td><input type="text" name="text" value="<?php echo $text; ?>" /></td><tr>
+ </tr><td><strong>text</strong></td> <td><input type="text" name="text" value="<?php echo $text; ?>" /><textarea name="text" cols="50" rows="4" name="link" value="<?php echo $text; ?>"></textarea></td><tr>
  </tr><td><strong>poster</strong></td> <td><input type="text" name="poster" value="<?php echo $poster; ?>" /><tr>
  </tr><td><p>* fubar score</p><tr></td>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
