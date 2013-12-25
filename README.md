@@ -7,7 +7,11 @@ Action quake 2 clan war script
 Change log
 ==========
 
-
+25-12-2013
+- members area added
+- add option to not delete from db. it wil make it invisable to the world.
+- tweaked the news view a bit.
+- add css for the page naviagtion menu.
 
 12-12-2013
 - updated the news functions
@@ -26,22 +30,19 @@ Change log
 03-12-2013
 - uploaded files we need.
 
-
 TODO list
 ==========
 News script
 + making database structure [done]
-- Add news [done]
-- Edit news [done]
-- Author [done]
-- News categories [progres]
++ Add news [done]
++ Edit news [done]
++ Author [done]
+? News categories [progres]
 
 Member section
-- Add member [progres]
---- Rank, Nick, Name, Location, DoB
-- Edit member
-- Remove member
-- Separate games (AQ2, CoD4, LoL?(lol! go play dota2 you fucking nubs))
+- Add member [done]
+- Edit member [proses]
+- Remove member[done]
 
 About section
 - General information about our clan
@@ -49,16 +50,6 @@ About section
 
 Links
 - AQ2, CoD, Clans we like, Game tools?
-
-Clanwar server reservation???
-- So other clans can get a temporary lrcon and schedule when they want to borrow our secondary CW server
-
-Contact information
-- General information where we can be found
-- Form for contacting us?
-
-Server list
-- Our imba servers #YOLO#SWAG#BRAG
 
 Admin control panel
 - Rank based? Who can add news, cws, links etc
