@@ -92,7 +92,7 @@ header('location:error.php');
  or die(mysql_error()); 
  
  // once saved, redirect back to the view page
- header("Location: ./index.php"); 
+ header("Location: ./index.php?page=wars"); 
  }
  }
  else

@@ -22,7 +22,7 @@ header('location:error.php');
  or die(mysql_error()); 
  
  // redirect back to the view page
- header("Location: ./index.php");
+ header("Location: ./index.php?page=wars");
  }
  else
  // if id isn't set, or isn't valid, redirect back to view page
