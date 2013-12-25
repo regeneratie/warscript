@@ -16,7 +16,8 @@ header('location:error.php');
  {
  // get id value
  $id = $_GET['id'];
- 
+
+
  // delete the entry
  $result = mysql_query("DELETE FROM wars WHERE id=$id")
  or die(mysql_error()); 
