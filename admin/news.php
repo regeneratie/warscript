@@ -8,13 +8,12 @@ while($row = mysql_fetch_array($result))
   {
 echo "<table width='800' align='center'>";
 
+echo "<br>";
 echo "<td><b>" . $row[titel] . "</b></td>";
 echo "<tr>";
-echo nl2br("<td>" . $row[text] . "</td>");
+echo nl2br("<td><br>" . $row[text] . "</td>");
 echo "<tr>";
-echo "<td>" . $row[date] . "</b></td>";
-echo "<tr>";
-echo "<td>Posted by <b>" . $row[poster] . '</b>  ' . $row[date] ."</td>";
+echo "<td><br>Posted by <b>" . $row[poster] . '</b>  ' . $row[date] ."</td>";
 echo "<tr>";
 echo '<td><a href="./news_edit.php?id=' . $row['id'] . '"><img src="../pics/edit.png" />
 		  <a href="./news_delete.php?id=' . $row['id'] . '"><img src="../pics/delete.png" />
