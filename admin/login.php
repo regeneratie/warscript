@@ -4,7 +4,7 @@ include('./dbconn.php');//para sa connection sang database
 if (isset($_POST['submit'])) {//condition kun e click ang button
 $UserName=$_POST['UserName'];//variable ang $Username kag ang $_POST['UserName'] ay value sang textbox nga UserName
 $Password=md5($_POST['Password']);//variable ang $Username kag ang $_POST['Password'] ay value sang textbox nga Password
-$result=mysql_query("select * from members where UserName='$UserName' and Password='$Password'")or die (mysql_error());//query sang database 
+$result=mysql_query("select * from admin where UserName='$UserName' and Password='$Password'")or die (mysql_error());//query sang database 
 		
 $count=mysql_num_rows($result);//isipon kn may tyakto sa query
 $row=mysql_fetch_array($result);//ma return row sa database

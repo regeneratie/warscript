@@ -29,7 +29,7 @@ header('location:./error.php');
 <li><a href="index.php?page=wars">wars</a>
 
 <ul>
-<li><a href="index.php?page=wars_new">Add</a></li>
+<li><a href="index.php?page=wars_add">Add</a></li>
 </ul>
 
 </li>
