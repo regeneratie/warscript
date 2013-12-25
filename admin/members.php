@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['member_id'])){
+header('location:error.php');
+}
 include('./dbconn.php');
 
 $result = mysql_query("SELECT * FROM members WHERE `delete` = 'no' ORDER BY id DESC") or die(mysql_error());
