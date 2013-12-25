@@ -5,11 +5,50 @@ header('location:./error.php');
 }
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>warscript</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+  </head>
+  <body>
+	
 <center>
-<a href="index.php?page=news">News</a>
-<a href="index.php?page=wars">Wars</a>
-<a href="index.php?page=member">Members</a>
-<a href="index.php?page=logout">Logout</a>
+<ul id="nav">
+
+<li><a href="index.php?page=news">News</a>
+
+<ul>
+<li><a href="index.php?page=news_add">Add</a></li>
+</ul>
+
+</li>
+
+<li><a href="index.php?page=wars">wars</a>
+
+<ul>
+<li><a href="index.php?page=wars_new">Add</a></li>
+</ul>
+
+</li>
+
+<li><a href="index.php?page=members">Members</a>
+
+<ul>
+<li><a href="index.php?page=members_add">Add</a></li>
+</ul>
+
+</li>
+
+<li><a href="index.php?page=logout">Logout</a>
+
+
+</li>
+
+</ul>
+<br>
 </center>
 
 <?php
@@ -26,3 +65,8 @@ header('location:./error.php');
 
 
 ?>
+	
+  </body>
+</html>
+
+

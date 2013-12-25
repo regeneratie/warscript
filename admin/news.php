@@ -10,7 +10,7 @@ echo "<table width='800' align='center'>";
 
 echo "<td><b>" . $row[titel] . "</b></td>";
 echo "<tr>";
-echo "<td>" . $row[text] . "</td>";
+echo nl2br("<td>" . $row[text] . "</td>");
 echo "<tr>";
 echo "<td>" . $row[date] . "</b></td>";
 echo "<tr>";
