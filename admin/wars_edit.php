@@ -12,17 +12,7 @@ header('location:error.php');
  // since this form is used multiple times in this file, I have made it a function that is easily reusable
  function renderForm($id, $date, $clan, $map1, $map1_score1, $map1_score2, $map2, $map2_score1, $map2_score2, $error)
  {
- ?>
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
- <html>
- <head>
- <title>Edit Record</title>
- 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<!-- Bootstrap -->
-			<link rel="stylesheet" href="../css/style.css" type="text/css">
- </head>
- <body>
- <?php 
+
  // if there are any errors, display them
  if ($error != '')
  {
@@ -34,7 +24,8 @@ header('location:error.php');
  
  <form action="" method="post">
  <input type="hidden" name="id" value="<?php echo $id; ?>"/>
-<div class="datagrid"><table width="800" align="center">
+<div class="datagrid">
+<table width="800" align="center" class="table table-bordered">
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
  <td><strong>date</strong></td> <td><input type="text" name="date" value="<?php echo $date; ?>" /></td><tr>
  </tr><td><strong>clan</strong></td> <td><input type="text" name="clan" value="<?php echo $clan; ?>" /></td><tr>
@@ -49,8 +40,7 @@ header('location:error.php');
  </table>
  </div>
  </form> 
- </body>
- </html> 
+
  <?php
  }
 

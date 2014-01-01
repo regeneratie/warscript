@@ -10,9 +10,9 @@ $result = mysql_query("SELECT * FROM members WHERE `delete` = 'yes' ORDER BY id 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
   {
-echo "<table width='800' align='center'>";
+echo "<table width='800' align='center' class='table table-striped'>";
 
-echo "<td><strong>Nickname</strong></td><td>" . $row[nickname] . "</td>";
+echo "<td style='width:20%;'><strong>Nickname</strong></td><td>" . $row[nickname] . "</td>";
 echo "<tr><td><strong>Surname</strong></td><td>" . $row[surname] . "</td></tr>";
 echo "<tr><td><strong>age</strong></td><td>" . $row[age] . "</td></tr>";
 echo "<tr><td><strong>country</strong></td><td>" . $row[country] . "</td></tr>";

@@ -10,9 +10,10 @@ $result = mysql_query("SELECT * FROM members WHERE `delete` = 'no' ORDER BY id D
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
   {
-echo "<table width='800' align='center'>";
+echo "<br>";
+echo "<table width='800' align='center' class='table table-striped'>";
 
-echo "<td><strong>Nickname</strong></td><td>" . $row[nickname] . "</td>";
+echo "<tr><td style='width:20%;'><strong>Nickname</strong></td><td>" . $row[nickname] . "</td></tr>";
 echo "<tr><td><strong>Surname</strong></td><td>" . $row[surname] . "</td></tr>";
 echo "<tr><td><strong>age</strong></td><td>" . $row[age] . "</td></tr>";
 echo "<tr><td><strong>country</strong></td><td>" . $row[country] . "</td></tr>";
@@ -25,7 +26,8 @@ echo "<tr><td><strong>quote</strong></td><td>" . $row[quote] . "</td></tr>";
 echo '<tr><td><strong>Add, Dell, Edit</strong></td><td><a href="./members_edit.php?id=' . $row['id'] . '"><img src="../pics/edit.png" />
 		  <a href="./members_visable.php?id=' . $row['id'] . '"><img src="../pics/visable.png" />
 		  </a></td></tr>';
-echo "<br></table>";
+echo "</table>";
+echo "<br>";
   }
 
 
