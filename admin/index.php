@@ -68,7 +68,7 @@ header('location:./error.php');
 					</ul>
 				</li>
 				<li>
-				<a href="index.php?page=logout">LogOut</a>
+				<a href="index.php?page=logout">LogOut -> <?php echo $_SESSION[('UserName')] ?></a>
 				</li>
           </ul>
         </div><!-- /.navbar-collapse -->

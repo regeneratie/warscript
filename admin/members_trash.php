@@ -23,7 +23,7 @@ echo "<tr><td><strong>favorite item</strong></td><td>" . $row[favorite_item] . "
 echo "<tr><td><strong>former clans</strong></td><td>" . $row[old_clans] . "</td></tr>";
 echo "<tr><td><strong>quote</strong></td><td>" . $row[quote] . "</td></tr>";
 echo '<tr><td><strong>Add, Dell, Edit</strong></td><td><a href="./members_edit.php?id=' . $row['id'] . '"><img src="../pics/edit.png" />
-		  <a href="./members_undo.php?id=' . $row['id'] . '"><img src="../pics/undo.png" />
+		  <a href="./members_undo.php?id=' . $row['id'] . '"><img align="right" src="../pics/undo.png" />
 		  </a></td></tr>';
 echo "<br></table>";
   }
