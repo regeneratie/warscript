@@ -30,7 +30,7 @@ header('location:error.php');
 <thead><tr><th></th><th><center>News Add</center></th></tr></thead>
  <td style="width:20%;"><strong>titel</strong></td> <td><input type="text" size="120" name="titel" value="<?php echo $titel; ?>" /></td><tr>
  </tr><td><strong>text</strong></td> <td><textarea cols="122" rows="15"type="text" name="text" value="<?php echo $text; ?>" /></textarea></td><tr>
- </tr><td><strong>poster</strong></td> <td><input type="text" name="poster" value="<?php echo $poster; ?>" /><tr>
+ </tr><input type="hidden" name="poster" value="<?php echo $poster; ?>" /><tr>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>
  </div>

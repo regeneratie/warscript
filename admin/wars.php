@@ -9,7 +9,7 @@ include('./dbconn.php');
 $result = mysql_query("SELECT * FROM wars WHERE `delete` = 'no' ORDER BY id DESC") or die(mysql_error());
 //Begin of the table
 echo "<div><table width='800' align='center' class='table table-striped'>";
-echo "<br><thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>HideDb</th></tr></thead>";
+echo "<br><thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Trash</th></tr></thead>";
 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))

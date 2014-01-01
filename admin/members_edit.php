@@ -21,22 +21,22 @@ header('location:error.php');
  ?> 
  
 
- 
+ <br>
  <form action="" method="post">
  <input type="hidden" name="id" value="<?php echo $id; ?>"/>
 <div class="datagrid">
 <table width="800" align="center" class="table table-bordered">
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
- <td><<strong>nickname</strong></td> <td><input type="text" name="nickname" value="<?php echo $nickname; ?>" /></td><tr><br/>
- </tr><td><strong>surname</strong></td> <td><input type="text" name="surname" value="<?php echo $surname; ?>" /></td><tr><br/>
- </tr><td><strong>age</strong></td> <td><input type="text" name="age" value="<?php echo $age; ?>" /></td><tr><br/>
- </tr><td><strong>country</strong></td> <td><input type="text" name="country" value="<?php echo $country; ?>" /><tr><br/>
- </tr><td><strong>player_since</strong></td> <td><input type="text" name="player_since" value="<?php echo $player_since; ?>" /><tr><br/>
- </tr><td><strong>favorite_map</strong></td> <td><input type="text" name="favorite_map" value="<?php echo $favorite_map; ?>" /><tr><br/>
- </tr><td><strong>favorite_weapon *</strong></td> <td><input type="text" name="favorite_weapon" value="<?php echo $favorite_weapon; ?>" /><tr><br/>
- </tr><td><strong>favorite_item</strong></td> <td><input type="text" name="favorite_item" value="<?php echo $favorite_item; ?>" /><tr><br/>
- </tr><td><strong>old_clans</strong></td> <td><input type="text" name="old_clans" value="<?php echo $old_clans; ?>" /><tr><br/>
- </tr><td><strong>quote</strong></td> <td><input type="text" name="quote" value="<?php echo $quote; ?>" /><tr><br/>
+ <td><<strong>nickname</strong></td> <td><input type="text" name="nickname" value="<?php echo $nickname; ?>" /></td><tr>
+ </tr><td><strong>surname</strong></td> <td><input type="text" name="surname" value="<?php echo $surname; ?>" /></td><tr>
+ </tr><td><strong>age</strong></td> <td><input type="text" name="age" value="<?php echo $age; ?>" /></td><tr>
+ </tr><td><strong>country</strong></td> <td><input type="text" name="country" value="<?php echo $country; ?>" /><tr>
+ </tr><td><strong>player_since</strong></td> <td><input type="text" name="player_since" value="<?php echo $player_since; ?>" /><tr>
+ </tr><td><strong>favorite_map</strong></td> <td><input type="text" name="favorite_map" value="<?php echo $favorite_map; ?>" /><tr>
+ </tr><td><strong>favorite_weapon *</strong></td> <td><input type="text" name="favorite_weapon" value="<?php echo $favorite_weapon; ?>" /><tr>
+ </tr><td><strong>favorite_item</strong></td> <td><input type="text" name="favorite_item" value="<?php echo $favorite_item; ?>" /><tr>
+ </tr><td><strong>old_clans</strong></td> <td><input type="text" name="old_clans" value="<?php echo $old_clans; ?>" /><tr>
+ </tr><td><strong>quote</strong></td> <td><input type="text" name="quote" value="<?php echo $quote; ?>" /><tr>
  </tr><td><p>* fubar score</p><tr></td>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>

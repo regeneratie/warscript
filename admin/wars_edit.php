@@ -21,7 +21,7 @@ header('location:error.php');
  ?> 
  
 
- 
+<br> 
  <form action="" method="post">
  <input type="hidden" name="id" value="<?php echo $id; ?>"/>
 <div class="datagrid">
