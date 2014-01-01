@@ -29,7 +29,7 @@ header('location:error.php');
 <table width="800" align="center" class="table table-bordered">
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
  <td><strong>titel</strong></td> <td><input type="text" size="158" name="titel" value="<?php echo $titel; ?>" /></td><tr><br/>
- </tr><td><strong>text</strong></td> <td><textarea cols="160" rows="5"type="text" name="text" value="<?php echo $text; ?>" /></textarea></td><tr><br/>
+ </tr><td><strong>text</strong></td> <td><textarea cols="160" rows="15"type="text" name="text" value="<?php echo $text; ?>" /></textarea></td><tr><br/>
  </tr><td><strong>poster</strong></td> <td><input type="text" name="poster" value="<?php echo $poster; ?>" /><tr><br/>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>

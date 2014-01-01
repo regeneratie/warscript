@@ -69,7 +69,7 @@ else
 	echo "<span style='color: blue'><b>Draw</b>";
 	$cw_draw++;
 }
-echo '<td><a href="./wars_edit.php?id=' . $row['id'] . '"><img src="../pics/edit.png" /></a></td>';
+echo '<td><a href="./index.php?page=wars_edit&id=' . $row['id'] . '"><img src="../pics/edit.png" /></a></td>';
 echo '<td><a href="./wars_visable.php?id=' . $row['id'] . '"><img src="../pics/visable.png" /></a></td>';
 
 
