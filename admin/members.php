@@ -24,7 +24,7 @@ echo "<tr><td><strong>favorite item</strong></td><td>" . $row[favorite_item] . "
 echo "<tr><td><strong>former clans</strong></td><td>" . $row[old_clans] . "</td></tr>";
 echo "<tr><td><strong>quote</strong></td><td>" . $row[quote] . "</td></tr>";
 echo '<tr><td><strong>Add, Dell, Edit</strong></td><td><a href="./index.php?page=members_edit&id=' . $row['id'] . '"><img src="../pics/edit.png" />
-		  <a href="./members_visable.php?id=' . $row['id'] . '"><img src="../pics/visable.png" />
+		  <a href="./members_visable.php?id=' . $row['id'] . '"><img align="right" src="../pics/visable.png" />
 		  </a></td></tr>';
 echo "</table>";
 echo "<br>";

@@ -19,7 +19,7 @@ echo "<tr>";
 echo "<td><br>Posted by <b>" . $row[poster] . '</b>  ' . $row[date] ."</td>";
 echo "<tr>";
 echo '<td><br><a href="./index.php?page=news_edit&id=' . $row['id'] . '"><img src="../pics/edit.png" />
-			  <a href="./news_visable.php?id=' . $row['id'] . '"><img src="../pics/visable.png" />
+			  <a href="./news_visable.php?id=' . $row['id'] . '"><img align="right" src="../pics/visable.png" />
 			</a></td>';
 echo "</table>";
   }
