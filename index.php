@@ -2,6 +2,7 @@
 <html>
 		<head>
 			<title>warscript</title>
+			<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
 		</head>
 <body>
 
