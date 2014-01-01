@@ -26,14 +26,14 @@ header('location:error.php');
  <form action="" method="post">
 <div class='datagrid'>
 <table width="800" align="center" class="table table-bordered">
-<thead><tr><th>Read</th><th>Input</th></tr></thead>
- </tr><td><strong>clan</strong></td> <td><input type="text" name="clan" value="<?php echo $clan; ?>" /></td><tr>
- </tr><td><strong>map1</strong></td> <td><input type="text" name="map1" value="<?php echo $map1; ?>" /></td><tr>
- </tr><td><strong>map1_score1 *</strong></td> <td><input type="text" name="map1_score1" value="<?php echo $map1_score1; ?>" /><tr>
- </tr><td><strong>map1_score2</strong></td> <td><input type="text" name="map1_score2" value="<?php echo $map1_score2; ?>" /><tr>
- </tr><td><strong>map2</strong></td> <td><input type="text" name="map2" value="<?php echo $map2; ?>" /><tr>
- </tr><td><strong>map2_score1 *</strong></td> <td><input type="text" name="map2_score1" value="<?php echo $map2_score1; ?>" /><tr>
- </tr><td><strong>map2_score2</strong></td> <td><input type="text" name="map2_score2" value="<?php echo $map2_score2; ?>" /><tr>
+<thead><tr><th></th><th><center>Wars add</center></th></tr></thead>
+ </tr><td style="width:20%;"><strong>clan</strong></td> <td><input type="text" size="120" name="clan" value="<?php echo $clan; ?>" /></td><tr>
+ </tr><td><strong>map1</strong></td> <td><input type="text" size="120" name="map1" value="<?php echo $map1; ?>" /></td><tr>
+ </tr><td><strong>map1_score1 *</strong></td> <td><input type="text" size="120" name="map1_score1" value="<?php echo $map1_score1; ?>" /><tr>
+ </tr><td><strong>map1_score2</strong></td> <td><input type="text" size="120" name="map1_score2" value="<?php echo $map1_score2; ?>" /><tr>
+ </tr><td><strong>map2</strong></td> <td><input type="text" size="120" name="map2" value="<?php echo $map2; ?>" /><tr>
+ </tr><td><strong>map2_score1 *</strong></td> <td><input type="text" size="120" name="map2_score1" value="<?php echo $map2_score1; ?>" /><tr>
+ </tr><td><strong>map2_score2</strong></td> <td><input type="text" size="120" name="map2_score2" value="<?php echo $map2_score2; ?>" /><tr>
  </tr><td><p>* fubar score</p><tr></td>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>

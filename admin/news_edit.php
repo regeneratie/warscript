@@ -27,8 +27,8 @@ header('location:error.php');
 <div class="datagrid"><table width="800" align="center" class="table table-bordered">
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
  <td><strong>date</strong></td> <td><input type="text" name="date" value="<?php echo $date; ?>" /></td><tr>
- </tr><td><strong>titel</strong></td> <td><input type="text" size="158" name="titel" value="<?php echo $titel; ?>" /></td><tr>
- </tr><td><strong>text</strong></td> <td><TEXTAREA ROWS="15" COLS="160" type="text" name="text" value="<?php echo $date; ?>"><?php echo $text; ?></TEXTAREA></td><tr>
+ </tr><td><strong>titel</strong></td> <td><input type="text" size="120" name="titel" value="<?php echo $titel; ?>" /></td><tr>
+ </tr><td><strong>text</strong></td> <td><TEXTAREA ROWS="15" COLS="122" type="text" name="text" value="<?php echo $date; ?>"><?php echo $text; ?></TEXTAREA></td><tr>
  </tr><td><strong>poster</strong></td> <td><input type="text" name="poster" value="<?php echo $poster; ?>" /><tr>
  </tr><td><p>* fubar score</p><tr></td>
   </tr><td><input type="submit" name="submit" value="Submit"><td>

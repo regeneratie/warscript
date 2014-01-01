@@ -27,9 +27,9 @@ header('location:error.php');
  <form action="" method="post">
 <div class='datagrid'>
 <table width="800" align="center" class="table table-bordered">
-<thead><tr><th>Read</th><th>Input</th></tr></thead>
- <td><strong>titel</strong></td> <td><input type="text" size="158" name="titel" value="<?php echo $titel; ?>" /></td><tr>
- </tr><td><strong>text</strong></td> <td><textarea cols="160" rows="15"type="text" name="text" value="<?php echo $text; ?>" /></textarea></td><tr>
+<thead><tr><th></th><th><center>News Add</center></th></tr></thead>
+ <td style="width:20%;"><strong>titel</strong></td> <td><input type="text" size="120" name="titel" value="<?php echo $titel; ?>" /></td><tr>
+ </tr><td><strong>text</strong></td> <td><textarea cols="122" rows="15"type="text" name="text" value="<?php echo $text; ?>" /></textarea></td><tr>
  </tr><td><strong>poster</strong></td> <td><input type="text" name="poster" value="<?php echo $poster; ?>" /><tr>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>
@@ -51,11 +51,11 @@ include('dbconn.php');
  // get form data, making sure it is valid
  $titel = mysql_real_escape_string(htmlspecialchars($_POST['titel']));
  $text = mysql_real_escape_string(htmlspecialchars($_POST['text']));
- $poster = mysql_real_escape_string(htmlspecialchars($_POST['poster']));
+ $poster = mysql_real_escape_string(htmlspecialchars($_SESSION[('UserName')]));
 
 
  // check to make sure both fields are entered
- if ($titel == '' || $text == '' || $poster == '')
+ if ($titel == '' || $text == '')
  {
  // generate error message
  $error = 'ERROR: Please fill in all required fields!';
