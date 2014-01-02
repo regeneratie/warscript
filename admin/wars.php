@@ -106,6 +106,7 @@ echo "";
 echo "</td><td>";
 echo "";
 echo "</td>";
+echo "</table>";
 
 
 $roundwon = $roundswon / $warsplayed;
@@ -115,7 +116,9 @@ $uitkomst_win = 100 / $count_win * $cw_won;
 $uitkomst_draw = 100 / $count_win * $cw_draw;
 $uitkomst_lost = 100 / $count_win * $cw_lost;
  
-echo "<div class='datagrid'><table width='800' align='center' class='table table-bordered'>";
+ 
+echo "<div class='datagrid'><table width='800' align='center' class='table table-bordered'><br>";
+
 echo "<thead><tr><th>Won</th><th>Draw</th><th>Lost</th></tr></thead>";
 echo("<tr><td>");
 echo $cw_won . ' X won,  is %' . number_format($uitkomst_win, 2, ',', ' ');
@@ -132,7 +135,10 @@ echo $roundslost;
 echo "</td><td>";
 echo $roundsplayed;
 echo "</td></tr>";
-
+echo "<br>";
+echo "<br>"; 
+echo "<br>";
+echo "</table>";
 
 mysql_close;
 ?>

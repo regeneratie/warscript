@@ -25,17 +25,16 @@ header('location:error.php');
 <div class='form-group'>
 <table width="800" align="center" class="table table-bordered">
 <thead><tr><th></th><th><center>Members Add</center></th></tr></thead>
- <td style="width:20%;"><strong>nickname</strong></td> <td><input type="text" size="120" name="nickname" value="<?php echo $nickname; ?>" /></td><tr>
- </tr><td><strong>surname</strong></td> <td><input type="text" size="120" name="surname" value="<?php echo $surname; ?>" /></td><tr>
- </tr><td><strong>age</strong></td> <td><input type="text" size="120" name="age" value="<?php echo $age; ?>" /></td><tr>
- </tr><td><strong>country</strong></td> <td><input type="text" size="120" name="country" value="<?php echo $country; ?>" /><tr>
- </tr><td><strong>player_since</strong></td> <td><input type="text" size="120" name="player_since" value="<?php echo $player_since; ?>" /><tr>
- </tr><td><strong>favorite_map</strong></td> <td><input type="text" size="120" name="favorite_map" value="<?php echo $favorite_map; ?>" /><tr>
- </tr><td><strong>favorite_weapon *</strong></td> <td><input type="text" size="120" name="favorite_weapon" value="<?php echo $favorite_weapon; ?>" /><tr>
- </tr><td><strong>favorite_item</strong></td> <td><input type="text" size="120" name="favorite_item" value="<?php echo $favorite_item; ?>" /><tr>
- </tr><td><strong>old_clans</strong></td> <td><input type="text" size="120" name="old_clans" value="<?php echo $old_clans; ?>" /><tr>
- </tr><td><strong>quote</strong></td> <td><input type="text" size="120" name="quote" value="<?php echo $quote; ?>" /><tr>
- </tr><td><p>* fubar score</p></td><td> </td><tr>
+ <td style="width:20%;"><strong>Nickname</strong></td> <td><input type="text" size="120" name="nickname" value="<?php echo $nickname; ?>" /></td><tr>
+ </tr><td><strong>Surname</strong></td> <td><input type="text" size="120" name="surname" value="<?php echo $surname; ?>" /></td><tr>
+ </tr><td><strong>Age</strong></td> <td><input type="text" size="120" name="age" value="<?php echo $age; ?>" /></td><tr>
+ </tr><td><strong>Country</strong></td> <td><input type="text" size="120" name="country" value="<?php echo $country; ?>" /><tr>
+ </tr><td><strong>Player since</strong></td> <td><input type="text" size="120" name="player_since" value="<?php echo $player_since; ?>" /><tr>
+ </tr><td><strong>Favorite map</strong></td> <td><input type="text" size="120" name="favorite_map" value="<?php echo $favorite_map; ?>" /><tr>
+ </tr><td><strong>Favorite weapon</strong></td> <td><input type="text" size="120" name="favorite_weapon" value="<?php echo $favorite_weapon; ?>" /><tr>
+ </tr><td><strong>Favorite item</strong></td> <td><input type="text" size="120" name="favorite_item" value="<?php echo $favorite_item; ?>" /><tr>
+ </tr><td><strong>Old clans</strong></td> <td><input type="text" size="120" name="old_clans" value="<?php echo $old_clans; ?>" /><tr>
+ </tr><td><strong>Quote</strong></td> <td><input type="text" size="120" name="quote" value="<?php echo $quote; ?>" /><tr>
   </tr><td><input type="submit" name="submit" value="Submit"><td>
  </table>
  </div>
