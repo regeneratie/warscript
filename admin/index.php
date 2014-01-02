@@ -37,7 +37,7 @@ header('location:./error.php');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Admin</a>
+          <a class="navbar-brand" href="index.php?category=news&page=news">Admin</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,29 +46,29 @@ header('location:./error.php');
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=news">View <img align="right" src="../pics/view.png" /></a></li>
-					  <li><a href="index.php?page=news_add">Add <img align="right" src="../pics/add.png" /></a></li>
-					  <li><a href="index.php?page=news_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
+					  <li><a href="index.php?category=news&page=news">View <img align="right" src="../pics/view.png" /></a></li>
+					  <li><a href="index.php?category=news&page=news_add">Add <img align="right" src="../pics/add.png" /></a></li>
+					  <li><a href="index.php?category=news&page=news_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Wars<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=wars">View <img align="right" src="../pics/view.png" /></a></li>
-					  <li><a href="index.php?page=wars_add">Add <img align="right" src="../pics/add.png" /></a></li>
-					  <li><a href="index.php?page=wars_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars">View <img align="right" src="../pics/view.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars_add">Add <img align="right" src="../pics/add.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=members">View <img align="right" src="../pics/view.png" /></a></li>
-					  <li><a href="index.php?page=members_add">Add <img align="right" src="../pics/add.png" /></a></li>
-					  <li><a href="index.php?page=members_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
+					  <li><a href="index.php?category=members&page=members">View <img align="right" src="../pics/view.png" /></a></li>
+					  <li><a href="index.php?category=members&page=members_add">Add <img align="right" src="../pics/add.png" /></a></li>
+					  <li><a href="index.php?category=members&page=members_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
 				</li>
 				<li>
-				<a href="index.php?page=logout">LogOut -> <?php echo $_SESSION[('UserName')] ?></a>
+				<a href="index.php?category=login&page=logout">LogOut -> <?php echo $_SESSION[('UserName')] ?></a>
 				</li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -81,17 +81,15 @@ header('location:./error.php');
         <div class="col-lg-12">
 
 <?php
-
-
-	$page = $_GET['page'];
-	if (!empty($page)) {
-		$page .= '.php';
-		include($page);
+	$url = '';
+	if (!empty($_GET['category'])) {
+		$url .= $_GET['category'] . '/';
 	}
-	else {
-		include('news.php');
+	if (!empty($_GET['page'])) {
+		$url .= $_GET['page'] . '.php';
 	}
 
+	include $url;	
 
 ?>
 		
