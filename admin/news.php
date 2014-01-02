@@ -12,7 +12,7 @@ while($row = mysql_fetch_array($result))
   {
 echo "<table width='800' align='center' class='table table-bordered'>";
 echo "<br>";
-echo "<td><b><h1>" . $row[titel] . "</h1></b></td>";
+echo "<td><b><h3>" . $row[titel] . "</h3></b></td>";
 echo "<tr>";
 echo nl2br("<td><br>" . $row[text] . "</td>");
 echo "<tr>";
