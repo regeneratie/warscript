@@ -46,7 +46,7 @@ header('location:./error.php');
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=news">View</a></li>
+					  <li><a href="index.php?page=news">View <img align="right" src="../pics/view.png" /></a></li>
 					  <li><a href="index.php?page=news_add">ADD <img align="right" src="../pics/add.png" /></a></li>
 					  <li><a href="index.php?page=news_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
@@ -54,7 +54,7 @@ header('location:./error.php');
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Wars<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=wars">View</a></li>
+					  <li><a href="index.php?page=wars">View <img align="right" src="../pics/view.png" /></a></li>
 					  <li><a href="index.php?page=wars_add">ADD <img align="right" src="../pics/add.png" /></a></li>
 					  <li><a href="index.php?page=wars_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
@@ -62,7 +62,7 @@ header('location:./error.php');
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Members<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?page=members">View</a></li>
+					  <li><a href="index.php?page=members">View <img align="right" src="../pics/view.png" /></a></li>
 					  <li><a href="index.php?page=members_add">ADD <img align="right" src="../pics/add.png" /></a></li>
 					  <li><a href="index.php?page=members_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
