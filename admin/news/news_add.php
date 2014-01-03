@@ -11,7 +11,7 @@ header('location:error.php');
  
  // creates the new record form
  // since this form is used multiple times in this file, I have made it a function that is easily reusable
- function renderForm($titel, $date, $text, $poster, $error)
+ function renderForm($titel, $text, $error)
  {
  
 
@@ -61,7 +61,7 @@ include('dbconn.php');
  $error = 'ERROR: Please fill in all required fields!';
  
  // if either field is blank, display the form again
- renderForm($titel, $text, $poster, $error);
+ renderForm($titel, $text, $error);
  }
  else
  {
