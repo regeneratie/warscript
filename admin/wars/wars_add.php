@@ -27,7 +27,7 @@ header('location:error.php');
 <div class='datagrid'>
 <table width="800" align="center" class="table table-bordered">
 <thead><tr><th></th><th><center>Wars add</center></th></tr></thead>
- </tr><td style="width:20%;"><strong>clan</strong></td> <td><input type="text" size="120" name="clan" value="<?php echo $clan; ?>" /></td><tr>
+ </tr><td style="width:20%;"><strong>clan</strong></td> <td> <?php include "wars_clans.php"; enemy_select(); ?></td><tr>
  </tr><td><strong>map1</strong></td> <td><input type="text" size="120" name="map1" value="<?php echo $map1; ?>" /></td><tr>
  </tr><td><strong>map1_score1 *</strong></td> <td><input type="text" size="120" name="map1_score1" value="<?php echo $map1_score1; ?>" /><tr>
  </tr><td><strong>map1_score2</strong></td> <td><input type="text" size="120" name="map1_score2" value="<?php echo $map1_score2; ?>" /><tr>
@@ -65,7 +65,7 @@ include('dbconn.php');
  if ($clan == '' || $map1 == '' || $map1_score1 == '' || $map1_score2 == '' || $map2 == '' || $map2_score1 == '' || $map2_score2 == '')
  {
  // generate error message
- $error = 'ERROR: Please fill in all required fields!';
+ $error = 'ERROR: Please fill in all required fields! ';
  
  // if either field is blank, display the form again
  renderForm($clan, $map1, $map1_score1, $map1_score2, $map2, $map2_score1, $map2_score2, $error);
