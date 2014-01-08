@@ -54,9 +54,17 @@ header('location:./error.php');
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Wars<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					  <li><a href="index.php?category=wars&page=wars">View <img align="right" src="../pics/view.png" /></a></li>
-					  <li><a href="index.php?category=wars&page=wars_add">Add <img align="right" src="../pics/add.png" /></a></li>
-					  <li><a href="index.php?category=wars&page=wars_trash">Trash <img align="right" src="../pics/visable.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars">View wars<img align="right" src="../pics/view.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars_add">Add wars<img align="right" src="../pics/add.png" /></a></li>
+					  <li><a href="index.php?category=wars&page=wars_trash">Trash wars<img align="right" src="../pics/visable.png" /></a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Clans<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="index.php?category=clans&page=clans">View clans<img align="right" src="../pics/view.png" /></a></li>
+					  <li><a href="index.php?category=clans&page=clans_add">Add clans<img align="right" src="../pics/add.png" /></a></li>
+					  <li><a href="index.php?category=clans&page=clans_trash">Trash clans<img align="right" src="../pics/visable.png" /></a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
