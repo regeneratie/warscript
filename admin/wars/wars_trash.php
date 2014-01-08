@@ -7,9 +7,17 @@ header('location:error.php');
 include('./dbconn.php');
 
 $result = mysql_query("SELECT * FROM wars WHERE `delete` = 'yes' ORDER BY id DESC") or die(mysql_error());
+
+
+//check if the trashbox is emty
+if(mysql_num_rows($result) > 0)
+{
 //Begin of the table
 echo "<div><table width='800' align='center' class='table table-striped'>";
 echo "<br><thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Restore</th><th>Delete</th></tr></thead>";
+
+
+
 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
@@ -139,7 +147,15 @@ echo "</td><td>";
 echo $roundsplayed;
 echo "</td></tr>";
 echo "</table>";
-
+  
+  
+}
+else
+{
+	echo "<br>";
+    echo "<br>";
+	echo "Trash box is emty ! !";
+}
 
 mysql_close;
 ?>

@@ -7,6 +7,10 @@ include('./dbconn.php');
 
 $result = mysql_query("SELECT * FROM members WHERE `delete` = 'yes' ORDER BY id DESC") or die(mysql_error());
 
+//check if the trashbox is emty
+if(mysql_num_rows($result) > 0)
+{
+
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
   {
@@ -30,7 +34,14 @@ echo '<tr><td><strong>Edit, Recover</strong></td><td><a href="./index.php?catego
 echo "</table>";
 echo "<br>";
   }
-
-
 mysql_close;
+}
+else
+{
+	echo "<br>";
+    echo "<br>";
+	echo "Trash box is emty ! !";
+	mysql_close;	
+}
+
 ?>
