@@ -27,7 +27,7 @@ header('location:error.php');
 <div class="datagrid">
 <table width="800" align="center" class="table table-bordered">
 <thead><tr><th>Read</th><th>Input</th></tr></thead>
- <td><strong>date</strong></td> <td><?php include "wars_clans.php"; enemy_select(); ?></td><tr>
+ <td><strong>date</strong></td> <td><input type="text" name="date" value="<?php echo $date; ?>" /></td><tr>
  </tr><td><strong>clan</strong></td> <td><input type="text" name="clan" value="<?php echo $clan; ?>" /></td><tr>
  </tr><td><strong>map1</strong></td> <td><input type="text" name="map1" value="<?php echo $map1; ?>" /></td><tr>
  </tr><td><strong>map1_score1 *</strong></td> <td><input type="text" name="map1_score1" value="<?php echo $map1_score1; ?>" /><tr>
