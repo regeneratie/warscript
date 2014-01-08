@@ -9,7 +9,7 @@ include('./dbconn.php');
 $result = mysql_query("SELECT * FROM wars WHERE `delete` = 'yes' ORDER BY id DESC") or die(mysql_error());
 //Begin of the table
 echo "<div><table width='800' align='center' class='table table-striped'>";
-echo "<br><thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Restore</th></tr></thead>";
+echo "<br><thead><tr><th>Versus</th><th>Map I</th><th>Score I</th><th>map II</th><th>Score II</th><th>+/-</th><th>W|D|L</th><th>Edit</th><th>Restore</th><th>Delete</th></tr></thead>";
 
 //Get info out of the database if in array
 while($row = mysql_fetch_array($result))
@@ -71,6 +71,7 @@ else
 }
 echo '<td><a href="./index.php?category=wars&page=wars_edit&id=' . $row['id'] . '"><img src="../pics/edit.png" /></a></td>';
 echo '<td><a href="./index.php?category=wars&page=wars_undo&id=' . $row['id'] . '"><img src="../pics/undo.png" /></a></td>';
+echo '<td><a href="./index.php?category=wars&page=wars_delete&id=' . $row['id'] . '"><img src="../pics/delete.png" /></a></td>';
 
 
 echo "</td>";

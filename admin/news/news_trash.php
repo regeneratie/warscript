@@ -12,7 +12,8 @@ while($row = mysql_fetch_array($result))
   {
 echo "<table width='800' align='center' class='table table-bordered'>";
 echo "<br>";
-echo "<td><b><h3>" . $row[titel] . "</h3></b></td>";
+echo "<td><b><h3>" . $row[titel] . "</h3></b>";
+echo '<a href="./index.php?category=news&page=news_delete&id=' . $row['id'] . '"><img align="right" src="../pics/delete.png" /></a></td>';
 echo "<tr>";
 echo nl2br("<td><br>" . $row[text] . "</td>");
 echo "<tr>";

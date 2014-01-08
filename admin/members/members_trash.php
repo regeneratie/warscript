@@ -13,7 +13,8 @@ while($row = mysql_fetch_array($result))
 echo "<br>";
 echo "<table width='800' align='center' class='table table-bordered'>";
 
-echo "<td style='width:20%;'><strong>Nickname</strong></td><td>" . $row[nickname] . "</td>";
+echo "<td style='width:20%;'><strong>Nickname</strong></td><td>" . $row[nickname];
+echo '<a href="./index.php?category=members&page=members_delete&id=' . $row['id'] . '"><img align="right" src="../pics/delete.png" /></a></td>';
 echo "<tr><td><strong>Surname</strong></td><td>" . $row[surname] . "</td></tr>";
 echo "<tr><td><strong>Age</strong></td><td>" . $row[age] . "</td></tr>";
 echo "<tr><td><strong>Country</strong></td><td>" . $row[country] . "</td></tr>";
